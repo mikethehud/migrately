@@ -12,6 +12,10 @@
     "frontend"
   ],
   "scripts": {
-    "start": "yarn workspaces run start"
+    "start": "yarn workspaces run start",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^3.4.3"
   }
 }
