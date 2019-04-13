@@ -4,14 +4,16 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon -e ts -w ./src -x npm run start:serve",
-    "start:serve": "ts-node ./src/index.ts",
-    "build": "tsc"
+    "start": "yarn build && concurrently --kill-others \"webpack --watch\" \"nodemon -w ./build --inspect ./build/index.js\"",
+    "build": "webpack"
   },
   "dependencies": {
     "@types/express": "^4.16.1",
+    "concurrently": "^4.1.0",
     "express": "^4.16.4",
     "nodemon": "^1.18.11",
-    "ts-node": "^8.0.3"
+    "ts-loader": "^5.3.3",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.0"
   }
 }
