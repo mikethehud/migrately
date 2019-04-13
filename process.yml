@@ -1,0 +1,9 @@
+apps:
+  - script: "./build/api/index.js"
+    name: "api"
+    exec_mode: "cluster"
+    instances: 1
+  - script: "./build/frontend/index.js"
+    name: "frontend"
+    exec_mode: "cluster"
+    instances: 1
