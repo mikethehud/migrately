@@ -3,7 +3,10 @@ apps:
     name: "api"
     exec_mode: "cluster"
     instances: 1
-  - script: "./build/frontend/index.js"
+  - script: "serve"
     name: "frontend"
     exec_mode: "cluster"
-    instances: 1
+    instances: 1,
+    env:
+      PM2_SERVE_PATH: "./build/frontend"
+      PM2_SERVE_PORT: 8080
