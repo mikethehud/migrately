@@ -10,6 +10,6 @@
     "sourceMap": true,
     "noImplicitAny": true
   },
-  "include": ["api/**/*", "frontend/**/*"],
-  "exclude": ["node_modules", "**/*.spec.ts"]
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules", "**/*.spec.ts", "build"]
 }
