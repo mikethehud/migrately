@@ -17,7 +17,5 @@
     "build": "yarn workspaces run build && yarn build:after",
     "build:after": "./scripts/postbuild.sh"
   },
-  "devDependencies": {
-    "typescript": "^3.4.3"
-  }
+  "devDependencies": {}
 }
