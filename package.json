@@ -16,6 +16,5 @@
     "frontend": "yarn workspace frontend run start",
     "build": "yarn workspaces run build && yarn build:after",
     "build:after": "./scripts/postbuild.sh"
-  },
-  "devDependencies": {}
+  }
 }
