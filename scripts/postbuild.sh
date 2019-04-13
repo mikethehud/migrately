@@ -5,8 +5,8 @@ mkdir build
 
 mkdir build/frontend
 mv frontend/build/* build/frontend/
-rm frontend/build
+rm -r frontend/build
 
 mkdir build/api
 mv api/build/* build/api/
-rm api/build
+rm -r api/build
