@@ -1,0 +1,17 @@
+{
+  "name": "migrately",
+  "version": "0.0.1",
+  "description": "Migration user interface written in node",
+  "main": "index.ts",
+  "repository": "git@github.com:mikethehud/migrately.git",
+  "author": "mikethehud <mail@mikehudson.de>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "api",
+    "frontend"
+  ],
+  "scripts": {
+    "start": "yarn workspaces run start"
+  }
+}
