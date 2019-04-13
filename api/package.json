@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "echo 'Starting api'"
+    "start": "echo 'Starting api'",
+    "build": "tsc"
   }
 }
